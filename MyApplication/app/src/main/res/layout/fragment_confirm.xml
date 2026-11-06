@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="餐點確認"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="2dp"
+        app:strokeWidth="1dp"
+        app:strokeColor="#CCCCCC">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvSelectedMainCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主餐：未選擇"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvSelectedSideDish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="副餐：未選擇"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvSelectedBeverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="飲料：未選擇"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:textSize="18sp"
+        android:padding="12dp" />
+
+</LinearLayout>
