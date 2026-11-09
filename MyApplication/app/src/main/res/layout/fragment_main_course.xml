@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="請選擇主餐："
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rgMainCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="牛肉漢堡"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbChickenBurger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="炸雞漢堡"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbPasta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="義大利麵"
+                android:textSize="18sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbCurry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日式咖哩飯"
+                android:textSize="18sp"
+                android:padding="8dp" />
+        </RadioGroup>
+
+    </LinearLayout>
+</ScrollView>
